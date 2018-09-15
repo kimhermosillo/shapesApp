@@ -5,7 +5,7 @@ import { AppRegistry } from 'react-native'
 import Header from './src/components/header'
 //attemp to create a component
 const App = () => (
-  <Header />
+  <Header headerText={'Shapes Plus'} />
 )
 
 

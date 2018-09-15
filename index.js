@@ -1,11 +1,11 @@
 //import a library to help read a component
 
 import React from 'react'
-import { Text, AppRegistry } from 'react-native'
-
+import { AppRegistry } from 'react-native'
+import Header from './src/components/header'
 //attemp to create a component
 const App = () => (
-  <Text>We're all gonna die anyways</Text>
+  <Header />
 )
 
 

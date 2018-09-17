@@ -12,8 +12,14 @@ class TargetArea extends Component {
       .then(response => this.setState({ TargetArea: response.data }))
   }
 
-  render () {
+  renderTargetArea() {
+    return this.state.TargetArea.map(TargetAreas => <Text>{TargetAreas.name}</Text>)
+  }
 
+
+
+
+  render () {
     console.log(this.state)
 
     return (

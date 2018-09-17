@@ -1,11 +1,16 @@
 //import a library to help read a component
 
 import React from 'react'
-import { AppRegistry } from 'react-native'
+import { AppRegistry, View } from 'react-native'
 import Header from './src/components/header'
+import TargetArea from './src/components/TargetArea'
+
 //attemp to create a component
 const App = () => (
-  <Header headerText={'Shapes Plus'} />
+  <View>
+    <Header headerText={'Shapes Plus'} />
+    <TargetArea />
+  </View>
 )
 
 

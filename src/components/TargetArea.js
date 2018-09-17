@@ -13,6 +13,9 @@ class TargetArea extends Component {
   }
 
   render () {
+
+    console.log(this.state)
+
     return (
       <View>
         <Text>Target Area!!!!!!!!</Text>

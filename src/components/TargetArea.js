@@ -7,12 +7,16 @@ class TargetArea extends Component {
 
   componentWillMount() {
     axios.get('https://shapesserver.herokuapp.com/targetarea')
-      .then(response => console.log(response))
+      .then(response => this.setState({ targetarea: response.data }))
   }
 
 
 
   render() {
+
+    console.log(this.state)
+
+
     return (
       <View>
         <Text>TARGET AREA</Text>

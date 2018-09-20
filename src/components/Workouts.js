@@ -1,32 +1,31 @@
 import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import axios from 'axios'
+import Twerkoutz from './Twerkoutz'
+// flux
+import { Actions } from 'react-native-router-flux'
 
 class Workouts extends Component {
     state = { workouts: [] }
 
 
-    componentWillMount() {
+    componentDidMount() {
         axios.get('https://shapesserver.herokuapp.com/workouts')
-            .then(response => {
-                this.setState({ workouts: response.data.shapes })
-            })
+            .then(response => this.setState({ workouts: response.data.twerk }))
+            }
 
-        render Workouts() {
-            const { shapes } = this.state.workouts
-            if (this.state.targetarea.shapes) {
-                console.log(shapes)
+        render Workouts = () => {
+            const { twerk } = this.state.workouts
+            if (this.state.targetarea.twerk) {
+                console.log(twerk)
             }
         }
 
-        render() {
-
-        }
-
+        render () {
         return (
             <View>
-                <Text>hello</Text>
-                <Shapes shapes = {this.state.workouts} />
+                <Text style={styles.welcome}>life sucks and then you die</Text>
+                <Twerk twerk = {this.state.workouts} />
             </View>
         )
     }

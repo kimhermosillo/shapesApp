@@ -11,23 +11,23 @@ class TargetArea extends Component {
       .then(response => this.setState({ targetarea: response.data }))
   }
 
-  renderTargetArea =()=> {
-    const {shapes} = this.state.targetarea
-    if(this.state.targetarea.shapes){
+  renderTargetArea = () => {
+    const { shapes } = this.state.targetarea
+    if (this.state.targetarea.shapes) {
       console.log(shapes)
     }
   }
 
 
   render() {
-   
-      
-  
+
+
+
 
 
     return (
       <View>
-        <Shapes  data={this.renderTargetArea()}/>
+        <Shapes data={this.renderTargetArea()} />
       </View>
     )
   }

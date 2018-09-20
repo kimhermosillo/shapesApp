@@ -8,13 +8,14 @@ const Header = (props) => {
   return (
     <View style={viewStyle}>
       <Text style={textStyle}>{props.headerText}</Text>
+     
     </View>
   )
 }
 
 const styles = {
   viewStyle: {
-    backgroundColor: '#ABE552',
+    backgroundColor: '#aed137',
     justifyContent: 'center',
     alignItems: 'center',
     height: 60,

@@ -6,9 +6,9 @@ import Shapes from './Shapes'
 class TargetArea extends Component {
   state = { targetarea: [] }
 
-  componentWillMount() {
+  componentDidMount() {
     axios.get('https://shapesserver.herokuapp.com/targetarea')
-      .then(response => this.setState({ targetarea: response.data }))
+      .then(response => this.setState({ targetarea: response.data.shapes }))
   }
 
   renderTargetArea = () => {
@@ -27,7 +27,8 @@ class TargetArea extends Component {
 
     return (
       <View>
-        <Shapes data={this.renderTargetArea()} />
+        <Text>hi</Text>
+        <Shapes shapes={this.state.targetarea} />
       </View>
     )
   }

@@ -8,7 +8,7 @@ import TargetArea from './src/components/TargetArea'
 //attemp to create a component
 const App = () => (
   <View>
-    <Header headerText={'Shapes Plus'} />
+    <Header headerText={'Shapes Plus'}  />
     <TargetArea />
   </View>
 )

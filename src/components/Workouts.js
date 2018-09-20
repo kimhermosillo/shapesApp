@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import axios from 'axios'
 
-
-
-
 class Workouts extends Component {
     state = { workouts: [] }
 
@@ -12,16 +9,24 @@ class Workouts extends Component {
     componentWillMount() {
         axios.get('https://shapesserver.herokuapp.com/workouts')
             .then(response => {
-                this.setState({ workouts: response.data })
+                this.setState({ workouts: response.data.shapes })
             })
 
         render Workouts() {
-            return this.state.workouts.map(workouts => )
+            const { shapes } = this.state.workouts
+            if (this.state.targetarea.shapes) {
+                console.log(shapes)
+            }
+        }
+
+        render() {
+
         }
 
         return (
             <View>
-                <Text></Text>
+                <Text>hello</Text>
+                <Shapes shapes = {this.state.workouts} />
             </View>
         )
     }

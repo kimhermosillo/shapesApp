@@ -1,12 +1,19 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-const Shapes = ({ data }) => {
+const Shapes = ({ shapes }) => {
+
+  const targetAreas = shapes.map( shape => {
+    console.log(shape)
+    return  (
+      <Text>
+        {shape.targetarea}
+      </Text>
+    )
+  }) 
   return (
     <View>
-      <Text>
-        {data}
-      </Text>
+      {targetAreas}
     </View>
   )
 }

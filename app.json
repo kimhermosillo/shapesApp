@@ -1,4 +1,11 @@
 {
   "name": "shapesapp",
-  "displayName": "shapesapp"
+  "displayName": "shapesapp",
+  "expo": {
+    "name": "shapesapp",
+    "slug": "shapesapp",
+    "sdkVersion": "On",
+    "privacy": "public"
+  
+  }
 }

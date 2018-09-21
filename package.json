@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "expo": "^30.0.1",
+    "nvm": "0.0.4",
     "react": "16.5.0",
     "react-native": "0.57.0",
     "react-native-router-flux": "^4.0.1"
